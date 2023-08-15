@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;500&display=swap');
+.review-single-card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    
+}
+.review-left{
+    display: flex;
+    gap: 1rem;
+}
+.review-right{
+    color: rgb(162, 162, 162);
+    font-size: 0.9rem;
+}
+.review-user-name{
+    font-size: 1.2rem;
+    font-family: 'Sora', sans-serif;
+    font-weight: 500;
+}
+.review-left-image{
+    margin-top: 0px;
+}
+.review-left-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.review-desc{
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 77vw;
+}
+@media (max-width: 1028px) {
+    .review-user-name{
+        font-size: 0.8rem;
+    }
+    .review-desc{
+        font-size: 0.6rem;
+        max-width: 45vw;
+    }
+    .review-right{
+        font-size: 0.5rem;
+    }
+}

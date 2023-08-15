@@ -1,0 +1,13 @@
+.grid-view-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media (max-width: 1028px) {
+  .grid-view-list{
+    grid-template-columns: 1fr ;
+  }
+  .grid-view-list > .ProductCard{
+    width: 14rem;
+  }
+}

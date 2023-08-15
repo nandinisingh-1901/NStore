@@ -1,0 +1,18 @@
+.FilterSection{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.filter-section{
+
+    cursor: pointer;
+}
+/* .filter-section:hover{
+    color: rgb(108, 108, 228)
+} */
+
+@media (max-width: 1028px) {
+    .FilterSection{
+        font-size: 12px;
+    }
+}

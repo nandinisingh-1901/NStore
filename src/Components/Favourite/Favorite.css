@@ -1,0 +1,11 @@
+.favourite-container{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    margin-left: -2rem;
+}
+
+
+@media (max-width:1028px) {
+    
+  }

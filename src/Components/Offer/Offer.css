@@ -1,0 +1,93 @@
+.Offer{
+    width: 90vw;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    height: 24rem;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: flex;
+}
+
+.offer-image{
+    height: 24rem;
+    width: 35rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.offer-content{
+    color: white;
+    background-color: #1D242D;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem;
+}
+.offer-content-one{
+    color: #4c4e50;
+}
+.offer-content-two{
+    font-size: 3.5rem;
+}
+
+.offer-content-three{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    background-color: white;
+    color: rgb(92, 91, 91);
+    width: 11rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.offer-content-three:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+.grabButton{
+    padding-top: 0.4rem;
+    font-size: 1.1rem;
+}
+
+
+@media (max-width:1028px) {
+    .Offer{
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 13rem;
+    }
+    .offer-image{
+        height: 15.1rem;
+        width: 100%;
+        object-fit:cover;
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }    
+    .offer-content{
+        border-radius: 0;
+        width: 57.5vw;
+        gap: 1rem;
+        position: relative;
+        bottom: 0.3rem;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .offer-content-one{
+        color: #4c4e50;
+    }
+    .offer-content-two{
+        font-size: 1rem;
+    }
+    .offer-content-three{
+        width: 10rem;
+    }
+}

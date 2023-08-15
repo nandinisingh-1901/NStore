@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap");
+.ListElement-container {
+  width: auto;
+  border: 1px solid rgb(232, 232, 232);
+
+  display: flex;
+  transition: transform 0.5s;
+  /* margin-bottom: 2rem; */
+  padding: 1rem;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.list-image {
+  height: 15em;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transform: scale(1);
+}
+.list-inside-image {
+  padding-top: 5px;
+  width: 235px;
+  height: 238px;
+  object-fit: scale-down;
+  cursor: pointer;
+}
+.list-inside-image:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+.list-description {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50vw;
+  gap: 2rem;
+}
+.product-list-description {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+}
+.add-cart-icon-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.list-heart {
+  cursor: pointer;
+}
+.list-product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-product-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+.ProductDescription {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2rem;
+}
+.login-button:disabled {
+  background-color: #6c6d6f;
+}
+.view-product {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  color: #ff3f6c;
+}
+.view-product:hover {
+  color: #e60036;
+  cursor: pointer;
+}
+@media (max-width: 1028px) {
+  .ListElement-container {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 0;
+    padding: 0;
+    gap: 0;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+  .list-description {
+    width: 62vw;
+    gap: 2rem;
+  }
+  .product-list-description {
+    font-size: 12px;
+  }
+  .view-product {
+    font-size: 12px;
+  }
+  .add-cart-icon-text {
+    gap: 0rem;
+    font-size: 0;
+  }
+  .ProductDescription {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,94 @@
+.Cart-Section {
+  /* margin-top: 7rem; */
+  margin-top: 89.8px;
+  display: flex;
+  background-color: #f1f3f6;
+  color: #29303e;
+  min-height: 91vh;
+  padding: 5px 10px;
+  
+  align-items: start;
+}
+.Cart-Section > * {
+    margin: 20px;
+  }
+  
+  .cart-left {
+    width: 60%;
+    margin-left: 4%;
+    border: 1px solid #aaa;
+    background-color: white;
+    border: 1px solid #e3e5e8;
+    height: fit-content;
+    border-radius: 5px;
+    padding-bottom: 1rem;
+  }
+  
+  .cart-right {
+    /* position: fixed; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* height: 19rem; */
+    position: sticky;
+    top: 16%;
+    right: 2%;
+    background-color: white;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 2rem;
+  }
+  .cart-right-SubTotal, .cart-right-Discount, .cart-right-GrandTotal{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .cart-right-Total{
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: #1D242D;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .cart-right-Total:hover{
+    background-color: #212933;
+  }
+  .discont-price{
+    color: rgb(87, 191, 144);
+  }
+  .cart-left-top{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  
+@media (max-width:1028px) {
+  .Cart-Section{
+    flex-direction: column;
+    align-items: center;
+    margin-top:69.8px;
+  }
+  .cart-left {
+    width: 90%;
+    margin-left: 4%;
+    border: 1px solid #aaa;
+    background-color: white;
+    border: 1px solid #e3e5e8;
+    height: fit-content;
+  }
+  
+  .cart-right {
+    width: 84%;
+    position: relative;
+  }
+  .cart-left-top{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+}

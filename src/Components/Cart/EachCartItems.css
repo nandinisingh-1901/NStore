@@ -1,0 +1,128 @@
+.cart-box{
+    margin: auto;
+    width: 53.5vw;
+    margin-top: 3rem;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-box:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.cart-box-left-image{
+    width: 4rem;
+    object-fit: scale-down;
+}
+.cart-box-left{
+    display: flex;
+    gap: 1rem;
+    max-width: 419px;
+}
+.cart-product-desc{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+}
+.cart-product-name{
+    margin-top: 0.5rem;
+}
+.cart-product-rating{
+    font-size: small;
+    color: rgb(192, 187, 187);
+}
+.cart-box-right{
+    display:flex;
+    width: 20rem;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 0.6rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid rgb(221, 221, 221);
+    opacity: 0.8;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    width: 5rem;
+    height: 2rem ;
+    margin-top: -0.1999999999999993rem;
+
+}
+.quantity > div{
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    font-size: 1.3rem;
+}
+.quantity-number{
+    font-size: 0.9rem !important;
+    cursor: default !important;
+}
+.crossIcon-box{
+    position: relative;
+    bottom: 2rem;
+    left: 1rem;
+    color: rgb(155, 153, 153);
+}
+.crossIcon{
+    padding: 2px;
+}
+.crossIcon:hover{
+    border-radius: 100%;
+    background-color: rgba(99, 93, 93, 0.881);
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    
+}
+@media (max-width:1028px) {
+    .cart-box-left{
+        display: block;
+    }
+    .cart-box-right{
+        flex-direction: column-reverse;
+        text-align: right;
+    }
+    .cart-product-name{
+        font-size: 12px;
+    }
+    .quantity{
+        width: 3rem;
+        height: 1rem;
+        position: absolute;
+        right: 3.5rem;
+
+    }
+    .cart-product-rating{
+        font-size: 10px;
+    }
+    .cart-box{
+        margin: auto;
+        width: 70.5vw;
+        margin-top: 3rem;
+        border-radius: 5px;
+        padding: 1rem;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: space-between;
+    }
+    .price{
+        position: relative;
+        bottom: 3rem;
+    }
+    .crossIcon-box{
+        bottom: 1rem;
+        left: 6px;
+    }
+    .crossIcon{
+        padding: 0;
+    }
+  }

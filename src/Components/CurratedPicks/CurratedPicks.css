@@ -1,0 +1,22 @@
+.CurratedPicks-section{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.currated-cards{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+@media (max-width:1028px) {
+    .currated-cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
